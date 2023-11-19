@@ -16,12 +16,12 @@ CREATE TABLE "feriados" (
 CREATE TABLE "semana" (
   "codigo_semana" int2 NOT NULL,
   "nome_dia" varchar(50) NOT NULL,
-  "sigla" char(2) NOT NULL,
+  "sigla" char(3) NOT NULL,
   PRIMARY KEY ("codigo_semana")
 );
 
 CREATE TABLE "tipo_feriado" (
-  "id_tipo_feriado" int2 NOT NULL,
+  "codigo_tipo_feriado" int2 NOT NULL,
   "tipo_ferido" varchar(50) NOT NULL,
   PRIMARY KEY ("id_tipo_feriado")
 );
